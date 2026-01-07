@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#Title {
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: grab;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#Title:hover {
+    transform: scale(1.0911);
+}
+
+
+.layout {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+
+#taskText {
+  width: 320px;
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+
+#taskText::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+
+#addBtn {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+  background: silver;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+#addBtn:hover {
+  background: grey;
+  transform: scale(1.0911);
+}
+
+#taskList {
+  width: 490px;
+  padding: 14px 18px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#taskList li {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 100px;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: grab;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    align-items: center;
+}
+
+#checkbtn {
+    visibility: hidden;
+}
+
+.xbtn {
+    visibility: hidden;
+}
+
+
+li #checkbtn {
+    visibility: visible;
+}
+
+li .xbtn {
+    visibility: visible;
+}
+
+
+#checkbtn {
+    accent-color: black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+.xbtn {
+  font-size: x-large;
+  cursor: pointer;
+  visibility: hidden;          
+  position: relative;          
+  right: -12px;               
+  top: -6px;                   
+  display: inline-block;
+}
+
+/* li:has(.xbtn:hover) {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.3rem;
+} */
