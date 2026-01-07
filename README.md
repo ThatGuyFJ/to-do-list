@@ -1,2 +1,3 @@
 # to-do-list
-Second Project: To Do List (ai used for the styling)
+Second Project: To Do List (ai used for the styling);
+Here again giving it a try at another project felt really solid but can be hard to remember basic principles and also syntax...
